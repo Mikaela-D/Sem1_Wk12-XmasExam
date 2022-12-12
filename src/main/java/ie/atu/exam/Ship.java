@@ -5,7 +5,13 @@ public class Ship {
     private String year;
     private Integer minCrew;
 
-    public Ship(){
+    public Ship(){ //Default constructor
+    }
+
+    public Ship(String shipName, String year, Integer minCrew){
+        this.shipName = shipName;
+        this.year = year;
+        this.minCrew = minCrew;
     }
 
     public String getShipName() {
