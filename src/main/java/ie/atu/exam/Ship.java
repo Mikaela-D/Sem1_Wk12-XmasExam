@@ -3,12 +3,12 @@ package ie.atu.exam;
 public class Ship {
     private String shipName;
     private String year;
-    private Integer minCrew;
+    private int minCrew;
 
     public Ship(){ //Default constructor
     }
 
-    public Ship(String shipName, String year, Integer minCrew){
+    public Ship(String shipName, String year, int minCrew){
         this.shipName = shipName;
         this.year = year;
         this.minCrew = minCrew;
@@ -30,11 +30,27 @@ public class Ship {
         this.year = year;
     }
 
-    public Integer getMinCrew() {
+    public int getMinCrew() {
         return minCrew;
     }
 
-    public void setMinCrew(Integer minCrew) {
+    public void setMinCrew(int minCrew) {
         this.minCrew = minCrew;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Ship Name : " + shipName + "Year : " + year + "Minimum Crew : " + minCrew;
+    }
+
+
+    /*static void vesselDetails(){
+        System.out.println("Ship name : " + );
+    }*/
+
+   /* public static void main(String[] args) {
+        Ship vesselDetails = new Ship(shipName, maxPassengers);
+        System.out.println("Name : " + vesselDetails.shipName + "  Year : " + vesselDetails.year + "  Minimum Crew : " + vesselDetails.minCrew);
+    }*/
+
 }
